@@ -1,0 +1,47 @@
+child: ListView(
+                  children: [
+                    SizedBox(
+                      height: 1.0,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Water Melon',
+                      itemPrice: 99,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Musk Melon',
+                      itemPrice: 125,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Coconuts',
+                      itemPrice: 40,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Kiwi',
+                      itemPrice: 240,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Star Fruit',
+                      itemPrice: 320,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Wild Berries',
+                      itemPrice: 400,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Blue Berries',
+                      itemPrice: 300,
+                    ),
+                    Freshcard(
+                      size: size,
+                      itemName: 'Guavas',
+                      itemPrice: 100,
+                    ),
+                  ],
+                ),
