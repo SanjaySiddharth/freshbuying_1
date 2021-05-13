@@ -1,7 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:freshbuyings/freshCard.dart';
+import 'package:freshbuyings/components/freshCard.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'components/titleCard.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -34,30 +35,9 @@ class _MainPageState extends State<MainPage> {
                   children: [
                     IconButton(
                         icon: Icon(Icons.add_location_alt), onPressed: () {}),
-                    RichText(
-                      text: TextSpan(
-                        children: [
-                          TextSpan(
-                            text: 'Fresh',
-                            style: GoogleFonts.roboto(
-                              textStyle: TextStyle(
-                                fontSize: 40.0,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                          TextSpan(
-                            text: 'Buyings',
-                            style: GoogleFonts.roboto(
-                              textStyle: TextStyle(
-                                fontSize: 35.0,
-                                fontWeight: FontWeight.w300,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                    TitleName(
+                      firstHeadTextSize: 40,
+                      secondHeadTextSize: 35,
                     ),
                     IconButton(
                         icon: Icon(Icons.shopping_cart_outlined),
