@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freshbuyings/MainPage.dart';
 
 import 'package:freshbuyings/splashScreen.dart';
 
@@ -11,10 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FreshBuyings',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SplashScreen(),
+        '/second': (context) => MainPage(),
+      },
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

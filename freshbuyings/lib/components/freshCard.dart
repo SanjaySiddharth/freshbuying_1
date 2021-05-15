@@ -31,6 +31,7 @@ final List<int> qty = <int>[
   0,
   0,
 ];
+int sum = 0;
 
 class Freshcard extends StatefulWidget {
   const Freshcard({
@@ -52,6 +53,7 @@ class Freshcard extends StatefulWidget {
 
 class _FreshcardState extends State<Freshcard> {
   int itemQuantity = 0;
+
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -112,7 +114,8 @@ class _FreshcardState extends State<Freshcard> {
                         onPressed: () {
                           setState(() {
                             itemQuantity = itemQuantity - 1;
-                            print(itemQuantity);
+                            sum = sum - widget.itemPrice;
+                            print(sum);
                           });
                         },
                       ),
@@ -124,6 +127,9 @@ class _FreshcardState extends State<Freshcard> {
                         onPressed: () {
                           setState(() {
                             itemQuantity = itemQuantity + 1;
+                            sum = sum + widget.itemPrice;
+                            print(sum);
+                            print(prices);
                             print(itemQuantity);
                           });
                         },

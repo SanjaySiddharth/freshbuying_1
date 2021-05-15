@@ -45,3 +45,35 @@ child: ListView(
                     ),
                   ],
                 ),
+
+
+
+                TotalCartSum tcs = TotalCartSum(qty: qty, prices: prices);
+String result = tcs.totalSum();
+
+
+RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'Total :',
+                          style: GoogleFonts.roboto(
+                            textStyle: TextStyle(
+                              fontSize: 35.0,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                        TextSpan(
+                          text: '$sum',
+                          style: GoogleFonts.roboto(
+                            textStyle: TextStyle(
+                              fontSize: 30.0,
+                              fontWeight: FontWeight.w300,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),

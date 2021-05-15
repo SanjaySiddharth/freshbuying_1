@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'titleCard.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'iconConstants.dart';
@@ -68,7 +69,9 @@ class _SplashBodyState extends State<SplashBody> {
                     DefaultButton(
                       size: size,
                       text: "Continue",
-                      press: () {},
+                      press: () {
+                        Navigator.pushNamed(context, '/second');
+                      },
                     ),
                     Spacer(),
                   ],
