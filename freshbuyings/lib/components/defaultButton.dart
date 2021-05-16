@@ -29,6 +29,7 @@ class DefaultButton extends StatelessWidget {
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w500,
+            fontSize: 20.0,
           ),
         ),
       ),

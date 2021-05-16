@@ -32,6 +32,16 @@ final List<int> qty = <int>[
   0,
 ];
 int sum = 0;
+Map<String, int> finalList = {
+  'Water Melon': 0,
+  'Musk Melon': 0,
+  'Coconuts': 0,
+  'Kiwi': 0,
+  'Star Fruit': 0,
+  'Wild Berries': 0,
+  'Blue Berries': 0,
+  'Guavas': 0,
+};
 
 class Freshcard extends StatefulWidget {
   const Freshcard({
@@ -116,6 +126,62 @@ class _FreshcardState extends State<Freshcard> {
                             itemQuantity = itemQuantity - 1;
                             sum = sum - widget.itemPrice;
                             print(sum);
+                            String name = widget.itemName;
+                            switch (name) {
+                              case "Water Melon":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Musk Melon":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Coconuts":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Kiwi":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+                              case "Star Fruit":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Wild Berries":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+                              case "Guavas":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Blue Berries":
+                                {
+                                  finalList.update(name, (value) => --value);
+                                  print(finalList);
+                                }
+                                break;
+                            }
                           });
                         },
                       ),
@@ -129,8 +195,63 @@ class _FreshcardState extends State<Freshcard> {
                             itemQuantity = itemQuantity + 1;
                             sum = sum + widget.itemPrice;
                             print(sum);
-                            print(prices);
                             print(itemQuantity);
+                            String name = widget.itemName;
+                            switch (name) {
+                              case "Water Melon":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Musk Melon":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Coconuts":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Kiwi":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+                              case "Star Fruit":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Wild Berries":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+                              case "Guavas":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+
+                              case "Blue Berries":
+                                {
+                                  finalList.update(name, (value) => ++value);
+                                  print(finalList);
+                                }
+                                break;
+                            }
                           });
                         },
                       ),

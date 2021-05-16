@@ -74,29 +74,17 @@ class _MainPageState extends State<MainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: 'Total :',
-                          style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
-                              fontSize: 35.0,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black,
-                            ),
-                          ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Checkout',
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.black,
                         ),
-                        TextSpan(
-                          text: '$sum',
-                          style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
-                              fontSize: 30.0,
-                              fontWeight: FontWeight.w300,
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ],

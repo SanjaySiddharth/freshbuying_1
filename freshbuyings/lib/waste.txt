@@ -77,3 +77,31 @@ RichText(
                       ],
                     ),
                   ),
+
+
+
+
+
+
+
+
+
+
+                  setState(() {
+                            itemQuantity = itemQuantity - 1;
+                            sum = sum - widget.itemPrice;
+                            print(sum);
+                          });
+                        },
+                      ),
+                      Text(
+                        '$itemQuantity',
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.add),
+                        onPressed: () {
+                          setState(() {
+                            itemQuantity = itemQuantity + 1;
+                            sum = sum + widget.itemPrice;
+                            print(widget.itemName);
+                            print(itemQuantity);
