@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:freshbuyings/MainPage.dart';
+
+import 'package:freshbuyings/checkoutScreen.dart';
 import 'package:freshbuyings/splashScreen.dart';
-import 'package:freshbuyings/checkOutScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashScreen(),
         '/second': (context) => MainPage(),
+        '/third': (context) => CheckOutScreen(),
       },
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,

@@ -75,7 +75,9 @@ class _MainPageState extends State<MainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/third');
+                    },
                     child: Text(
                       'Checkout',
                       style: GoogleFonts.roboto(
